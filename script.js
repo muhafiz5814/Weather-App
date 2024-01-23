@@ -17,7 +17,6 @@ const searchCity = () => {
         removeError()
     })
     .catch(err => {
-
         showError()
         console.log(err)
         console.log("Something Happened")
@@ -28,7 +27,8 @@ const getWeather = (city) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '448f6e6646mshae8d1b83e3bf9dcp19d66cjsndf02efe18abe',
+            // Provide your RapidAPI key to make a request
+            'X-RapidAPI-Key': 'YOUR API KEY',
             'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
         }
     };
@@ -37,32 +37,22 @@ const getWeather = (city) => {
         .then(response => response.json())
         .catch(err => console.error(err))
         // .then(response => response)
-        
-
 }
-
 
 const showWeather = (data) => {
     document.getElementById("city1").textContent = `${data.location.city} (${data.location.country})`
-    
     document.getElementById("main").textContent = data.current_observation.condition.text
-    
     document.getElementById("temp").textContent = data.current_observation.condition.temperature
-    
     document.getElementById("min-temp").textContent = data.forecasts[0].low
-    
     document.getElementById("max-temp").textContent = data.forecasts[0].high
-
 }
 
 const showError = () => {
     const errorEl = document.getElementById("error-box")
-
     errorEl.innerHTML = `<h3> Invalid Input! Please type a city name. </h3>`
 }
 
 const removeError = () => {
     const errorEl = document.getElementById("error-box")
-
     errorEl.innerHTML = ``
 }
