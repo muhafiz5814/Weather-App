@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* align-items: center; */
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+.container{
+    padding: 0 36.9%;
+    display: flex;
+    flex-direction: column;
+    /* width: 100px; */
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.title h1{
+    font-weight: 600;
+    color: darkgoldenrod;
+    line-height: 4.2rem;
+}
+
+.input_form, .details-container{
+    max-width: 400px;
+    border: 1px solid rgb(0, 0, 0, 0.15);
+    /* height: 2rem; */
+    width: 400px;
+    border-radius: 0.3rem;
+}
+
+#input-city{
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+#search-btn{
+    margin: 10px auto;
+    height: 2.5rem;
+    width: 6rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.details-container{
+    text-align: center;
+}
+
+.city-name{
+    box-sizing: border-box;
+    height: 3.5rem;
+    background: rgb(0, 0, 0, 0.02);
+    border: none;
+    border-radius: 0.3rem 0.3rem 0 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(35, 35, 36, 0.06);
+    padding: 0.75rem 1.25rem;
+}
+
+#main{
+    margin-bottom: 0.8rem;
+    padding: 1.2rem;
+    /* background-color: black; */
+}
+
+.temp-details ul{
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+#error-box h3{
+    box-sizing: border-box;
+    background: rgb(255, 0, 0);
+    color: white;
+    border-radius: 0.3rem;
+    border: none;
+    margin-top: 100px;
+    width: 400px;
+    /* height: 50px; */
+    text-align: center;
+    /* padding: 1.5rem; */
+
+}

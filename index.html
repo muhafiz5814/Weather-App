@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 id="title">Weather</h1>
+        </div>
+        <div class="input_form">
+            <input type="text" placeholder="Search City" id="input-city">
+        </div>
+        <button id="search-btn" onclick="searchCity()">Search</button>
+        <div class="details-container">
+            <div class="city-name">
+                <p id="city1">----</p>
+            </div>
+            <div class="weather-details">
+                <h1 id="main">----</h1>
+                <div class="temp-details">
+                    <ul>
+                        <li>Temp: <span id="temp">--</span>&deg;C</li>
+                        <li>Min Temp: <span id="min-temp">--</span>&deg;C</li>
+                        <li>Max Temp: <span id="max-temp">--</span>&deg;C</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="error-box">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
